@@ -78,8 +78,8 @@ public class TextModActivity extends ActionBarActivity {
         spinner.setOnItemSelectedListener(new MySpinnerListener());
 
         editText = (TextView) findViewById(R.id.editText);
-        Button clearButton = (Button)findViewById(R.id.clear_button);
-        clearButton.setOnClickListener(new ClearButtonListener());
+        Button sweetButton = (Button)findViewById(R.id.sweet_button);
+        sweetButton.setOnClickListener(new ClearButtonListener());
     }
 
     /**
@@ -137,7 +137,7 @@ public class TextModActivity extends ActionBarActivity {
     }
     private class ClearButtonListener implements View.OnClickListener {
         public void onClick(View v) {
-            editText.setText("");
+            editText.setText("Sweet Grapes");
         }
     }
 }
